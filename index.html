@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>181410 float</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style>
+		header, section{width:900px; margin:auto;}
+		header{background: blue; height:300px;}
+		h1{text-align:center;height:50px;line-height:300px;color:white;}
+
+		section{margin-top: 3em;}
+		.blue{background: blue}
+		.red{background: red}
+		.black{background: black}
+
+		.full{width:900px;height:300px;float: left;}
+		.rect{width:600px; height:300px;float:left;}
+		.square{width:300px; height:300px;float:left;}
+		
+		.half{height:150px;}
+		.clear{clear:both;}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>let's try to use float style</h1>
+	</header>
+	<section>
+		<div class="blue square"></div>
+		<div class="red square"></div>
+		<div class="blue square"></div>
+		<div class="clear"></div>
+	</section>
+	<section>
+		<div class="red rect"></div>
+		<div class="blue square"></div>
+		<div class="clear"></div>
+	</section>
+	<section>
+		<div class="blue square"></div>
+		<div class="red rect"></div>
+		<div class="clear"></div>
+	</section>
+	<section>
+		<div class="black full"></div>
+		<div class="clear"></div>
+	</section>
+	<section>
+		<div class="blue square"></div>
+		<div class="red square"></div>
+		<div class="blue square"></div>
+		<div class="clear"></div>
+	</section>
+	<section>
+		<div class="blue rect"></div>
+		<div class="square">
+			<div class="blue square half"></div>
+			<div class="black square half"></div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	<section>
+		<div class="red square"></div>
+		<div class="square">
+			<div class="blue square half"></div>
+			<div class="black square half"></div>
+		</div>
+		<div class="red square"></div>
+		<div class="clear"></div>
+	</section>
+	
+</body>
+</html>
